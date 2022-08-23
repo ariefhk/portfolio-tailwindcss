@@ -8,9 +8,72 @@
     <title>Portfolio Tailwind CSS</title>
   </head>
   <body>
+    <!-- Header Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container md:px-10 px-5 lg:px-20">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#" class="font-bold text-primary text-lg block py-6">
+              Arx
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg max-w-[250px] right-4 w-full top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-secondary py-2 mx-8 group-hover:text-primary flex"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-secondary py-2 mx-8 group-hover:text-primary flex"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#course"
+                    class="text-secondary py-2 mx-8 group-hover:text-primary flex"
+                    >Course</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
     <!-- Hero Section Start -->
     <section id="home" class="pt-36">
-      <div class="container">
+      <div class="container md:px-10 px-5 lg:px-20">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1
@@ -18,7 +81,7 @@
             >
               Hello Everyone 👋, I'm
               <span
-                class="block text-secondary font-bold text-3xl mt-1 md:text-xl lg:text-5xl"
+                class="block text-secondary font-bold text-3xl mt-1 md:text-xl lg:text-[30px] xl:text-[40px]"
                 >Arief Rachman Hakim</span
               >
             </h1>
@@ -43,17 +106,43 @@
                 srcset=""
                 class="max-w-full mx-auto"
               />
-              <img
-                src="/dist/images/blob.svg"
-                alt=""
-                srcset=""
-                class="absolut bottom-0 z-40"
-              />
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-20">
+      <div class="container md:px-10 px-5 lg:px-20">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary mb-4 text-lg">
+              Tentang Saya
+            </h4>
+            <h2>Saya adalah Mahasiswa</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+              modi veritatis fuga error saepe iure vero velit est culpa
+              consequuntur dolore nostrum tenetur sunt dolorem.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary mb-4 text-lg">
+              Let's Connect
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+              inventore! Laborum quas illo earum nobis ab, inventore sunt ipsa
+              laboriosam minus ullam illum, consequatur quo asperiores dolore
+              libero! Minima, voluptatum?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+    <script src="/dist/script.js"></script>
   </body>
 </html>
